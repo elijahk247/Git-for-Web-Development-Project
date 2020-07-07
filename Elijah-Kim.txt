@@ -5,12 +5,45 @@ Link to Finished CodePen: https://codepen.io/elijahk247/pen/qBboyWp?editors=1100
 Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
 
     1. What is Semantic HTML? 
+
+        We use the word semantic to describe tags with meaning. When we say semantic HTML,
+        it means the tags that we are using have inherent descriptions as to what we are doing 
+
     2. What is HTML used for? 
+
+        HTML is one of the languages that are used for web development.
+        As described in the modules, we utilize HTML to create the foundation of a webpage.
+        We use it to display data in a graphical form that can then be layered with CSS and JavaScript.
+
     3. What is an attribute and where do we put it? 
+
+        Attributes are another way we can supply data to an element, which is used when we 
+        need to include information that we don't want to render on the page
+
+        The attribute goes in the opening tag of the element.
+            ex. <a href="about">hello</a>
+                -href is the attribute
+
     4. What is the h1 tag used for? How many times should I use it on a page?
+
+        The h1 tag is one of six heading tags that are used to present the subject matter of the page.
+        While it is possible to use the h1 tag multiple times, the best practice is to limit it to the
+        most important heading for the webpage. 
+
     5. Name two tags that have required attributes
+
+        Two tags that require attributes are the a ('anchor') tag and the img ('image') tag.
+        A tag requires the href attribute and  the img tag requires the src attribute.
+
     6. What do we put in the head of our HTML document? 
-    7. What is an id? 
+
+        If we are adding CSS to our web page, the head is utilized to inform the web page that
+        the browser is going to be reading CSS. This is done through HTML elements style and link.
+
+    7. What is an id?
+
+        Ids specify a unique id for an HTML element.           
+
     8. What elements can I add an id to? 
     9. How many times can I use the same id on a page? 
     10. What is a class? 
