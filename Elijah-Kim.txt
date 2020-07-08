@@ -45,14 +45,49 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
         Ids specify a unique id for an HTML element.           
 
     8. What elements can I add an id to? 
+
+        You can add an ID to whatever element but the difference between an ID and class is that
+        you cannot have more than one element with the same id in an HTML document.
+
     9. How many times can I use the same id on a page? 
+
+        IDs can only be applied once within a document.
+
     10. What is a class? 
-    11. What elements can I add a class to? 
-    12. How many times can I use the same class on a page? 
+
+        A class is something that we can use in HTML to utilize elements of CSS and JavaScript.
+        We have been using classes a way to style multiple elements with a singular class. 
+
+    11. What elements can I add a class to?
+
+        Classes can be used on any element.
+
+    12. How many times can I use the same class on a page?
+
+        Classes can be used as many times as needed. 
+
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute in the image tag used for? 
+
+        To open a link in a new tab, you would have to add another attribute to the a tag.
+            ex.     <a target = "_blank" href = "https://example-site.com"> New Tab link</a>
+
+    14. What is the alt attribute in the image tag used for?
+
+        The alt tag in the img tag isn't required but is best practice to use it to describe an image if the image cannot be displayed.
+        <img src ="pine-apple.jpg" alt="Blue Pineapple"</img>
+
     15. How do I reference an id?
+
+        To reference an id, you would have to use '#' before the id name.
+            ex.     <a href = '#example-id'> Example </a>
+
     16. What is the difference between a section and a div
+
+        The biggest difference between a section and a div tag is that a section is a semantic tag.
+        This means that the section tag has inherently more meaning and would be more descriptive in our code.
+        Div can be used in the same way but lacks the information that a section tag might. 
+        A div can be used to create space, add structure or style elements; using markup like this is referred to as presentational HTML.
+
     17. What is CSS used for? 
 
         HTML and CSS work together to create web pages that we are familiar with seeing.
@@ -68,6 +103,11 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
         This selector applies all rules denoted within the braces to every single h2 element in our HTML code.
 
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+        The difference between id and class is that class can be used on multiple elements while id can only be used once per element.
+        A good example of using id in code would be to use it to anchor to a certain point in the webpage that you can return to by clickling on a specific element.
+        An example of class would be to define styling that would be utilized by multiple different h and p tags.
+
     20. How do we select classes in CSS?
 
         Selecting classes in CSS is done through the use of '.';
@@ -77,15 +117,62 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
 
     21. How do we select a p element with a single class of “human””?
 
-        
+        we would do this through:
+                p.human {
+
+                }
 
     22. What is a parent child selector? When would this be useful? 
+
+        A parent child selector is selecting a specific tag that falls under another tag rather than targetting a tag type on its own.
+        Due to specificity, this allows us to target specific tags.
+            ex.     div p {
+                        /* example code */
+                    }
+
     23. How do you select all links within a div with the class of sidebar?
+
+        It would be done like:
+            div a.sidebar {
+                /* this is example code */
+            }
+
     24. What is a pseudo selector?
+
+        A pseudo selector looks like a CSS selector with a colon following it.
+        A specifc usage of a pseudo selector is to define a special state of an element.
+            ex.     a:hover {
+                         /* can change the state of a elements when hovering over them
+                         */
+                    }
+
     25. What do we use the change the spacing between lines?
+
+        You can use the line-height property in CSS.
+            ex.     h1 {
+                        line-height: 20px;
+                        /* can also be done with em units or % */
+                    }
+
     26. What do we use to change the spacing between letters?
+
+        You can change the spacing between letters through the property: letter-spacing.
+        It's default value is normal but can be set to specific px. 
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+        This is done through the use of text-transform property.
+        text-transform: uppercase; /* changes every text into uppercase */
+        text-transform: lowercase; /* changes every text into lowercase */
+        text-transform: capitalize; /* changes first letter of every word into capital letters */
+
     28. How do I add a 1px border around my div that is dotted and black?
+
+        To add a border around my div that is dotted and black is done through the border property.
+            div {
+                border: 1px dotted "black";
+            }
+
     29. How do I select everything on the page? 
 
         To select everything, it is done with '*'.
@@ -117,9 +204,46 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
         You have to be careful as unlike a GUI, we will not be prompted with a warning when the command is run; instant deletion.
 
     34. Why should I use version control? 
+
+        Each team that you work will follow a specific version control and this is done because it is an efficient method of creating and contributing within various memmbers of a team.
+        Version controls allows for consistentcy within a team as well as make specific distinct changes that alter the master code.
+
     35. How often should I commit to github?
-    36. What is the command we would use to push our repo up to github? 
-    37. Walk me through Lambda's git flow. 
+
+        You should commit as often as you deem necessary. A good rule of thumb is you would commit as often as you make nominal changes to your cloned code.
+
+    36. What is the command we would use to push our repo up to github?
+
+        The command we use would be the git push command. 
+        If pushing the branch for the first time, this would require the full line of git push -u origin 'branch-name'
+        We would then start using git push following that first time.
+
+    37. Walk me through Lambda's git flow.
+
+        Lambda's git flow starts from the master code. 
+        We first fork from master and create a repo in our GitHub account.
+        Add your TL as a collaborator your forked repo.
+        From there, you press 'clone or download' and copy the HTTPS link.
+        You would then use CLI and head to the directory you would like to make a clone of this repo.
+        Create a local repo using the command: git clone 'link-to-repo'
+        cd into your newly created local repo.
+        Create your own branch through the git command: git checkout -b 'firstname-lastname'.
+        This will allow us to make changes to our branch which we can later push to master.
+
+        To add and commit changes:
+        git add. allows for you to add all changes made to the branch.
+        git commit -m "helpful message" will allow you to commit the added changes to the branch.
+        git push -u origin branch-name will allow you to push your newly created branch to your github repo.
+
+        After all the steps listed above, you can submit a pull request to master.
+        Go to your forked repo and select 'branch: master'.
+        Select your branch and click new pull request button to make a pull request.
+        It will redirect you to the pull request page.
+
+        From here, click on dropdown base repository and change it to your forked repo.
+        Add your TL to the reviews and submit the pull request.
+        The TL will merge your pull request; do not merge your own pull request.
+
 
 Stretch Questions
 
