@@ -54,10 +54,31 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     15. How do I reference an id?
     16. What is the difference between a section and a div
     17. What is CSS used for? 
+
+        HTML and CSS work together to create web pages that we are familiar with seeing.
+        THe browser reads CSS and applies the different styling rules it has to different elements in our HTML.
+
     18. How to we select an element? Example - every h2 on the page
+
+        To select an element in HTML, we use a selector in CSS. 
+        The format is as follows:
+                h2 {
+
+                }
+        This selector applies all rules denoted within the braces to every single h2 element in our HTML code.
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
     20. How do we select classes in CSS?
+
+        Selecting classes in CSS is done through the use of '.';
+            ex.     .class-example {
+
+                    }
+
     21. How do we select a p element with a single class of “human””?
+
+        
+
     22. What is a parent child selector? When would this be useful? 
     23. How do you select all links within a div with the class of sidebar?
     24. What is a pseudo selector?
@@ -66,10 +87,35 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
     28. How do I add a 1px border around my div that is dotted and black?
     29. How do I select everything on the page? 
+
+        To select everything, it is done with '*'.
+                * {
+                    /* Any changes implemented here will be applied to every element in HTML
+                    */
+
+                }
+
     30. How do I write a comment in CSS?
+
+        Unlike other common languages, CSS is missing the single line comment.
+        However, you can still block comment using:
+                /* This is a sample comment
+                */
+
     31. How do I find out what file I am in, when I am using the command line? 
+
+        Using the 'pwd' command will show what directory you are currently in in the terminal.
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+
+        Using 'ls' command will list out every single file/directory inside of the current directory you are in.
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+
+        A file is removed through the 'rm' command. 
+            ex.     rm 'example-file.txt'
+        You have to be careful as unlike a GUI, we will not be prompted with a warning when the command is run; instant deletion.
+
     34. Why should I use version control? 
     35. How often should I commit to github?
     36. What is the command we would use to push our repo up to github? 
